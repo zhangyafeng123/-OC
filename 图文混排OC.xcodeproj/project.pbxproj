@@ -13,6 +13,7 @@
 		BA48599C2136D43800F05576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA48599B2136D43800F05576 /* Assets.xcassets */; };
 		BA48599F2136D43800F05576 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA48599D2136D43800F05576 /* LaunchScreen.storyboard */; };
 		BA4859A22136D43800F05576 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4859A12136D43800F05576 /* main.m */; };
+		BA4859AA2136DD8000F05576 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4859A92136DD8000F05576 /* DemoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		BA48599E2136D43800F05576 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA4859A02136D43800F05576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA4859A12136D43800F05576 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA4859A82136DD8000F05576 /* 图文混排OC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "图文混排OC-Bridging-Header.h"; sourceTree = "<group>"; };
+		BA4859A92136DD8000F05576 /* DemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +65,13 @@
 				BA4859932136D43600F05576 /* AppDelegate.m */,
 				BA4859952136D43600F05576 /* ViewController.h */,
 				BA4859962136D43600F05576 /* ViewController.m */,
+				BA4859A92136DD8000F05576 /* DemoViewController.swift */,
 				BA4859982136D43600F05576 /* Main.storyboard */,
 				BA48599B2136D43800F05576 /* Assets.xcassets */,
 				BA48599D2136D43800F05576 /* LaunchScreen.storyboard */,
 				BA4859A02136D43800F05576 /* Info.plist */,
 				BA4859A12136D43800F05576 /* main.m */,
+				BA4859A82136DD8000F05576 /* 图文混排OC-Bridging-Header.h */,
 			);
 			path = "图文混排OC";
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 				TargetAttributes = {
 					BA48598E2136D43600F05576 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -144,6 +150,7 @@
 				BA4859972136D43600F05576 /* ViewController.m in Sources */,
 				BA4859A22136D43800F05576 /* main.m in Sources */,
 				BA4859942136D43600F05576 /* AppDelegate.m in Sources */,
+				BA4859AA2136DD8000F05576 /* DemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "图文混排OC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -291,6 +299,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "zhangyafeng.----OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "图文混排OC/图文混排OC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -299,6 +310,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "图文混排OC/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,6 +319,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "zhangyafeng.----OC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "图文混排OC/图文混排OC-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
